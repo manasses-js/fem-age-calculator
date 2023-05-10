@@ -72,6 +72,8 @@ botaoStart.addEventListener('click', () => {
     let controleMes = false;
     let controleAno = false;
 
+    let eBissexto = false;
+
     //--- FILTRA SOMENTE O VALOR DO INPUT E DEIXA PRONTO PARA USO ---
 
     let valorDiaFiltrado = inputDia.value;
@@ -173,6 +175,7 @@ botaoStart.addEventListener('click', () => {
             if (valorAnoFiltrado % 4 == 0 && valorAnoFiltrado % 100 != 0 || 
                 valorAnoFiltrado % 4 == 0 && valorAnoFiltrado % 100 == 0 && valorAnoFiltrado % 400 == 0) {
                     maxDay = 29;
+                    eBissexto = true;
             } else {
                 maxDay = 28;
             }
@@ -192,6 +195,7 @@ botaoStart.addEventListener('click', () => {
         if (valorDiaFiltrado > maxDay) {
             diasAmais.classList.add("diasAmais");
             mensagemDiasAmais.textContent = "Must be a valid date";
+            controleDia = false;
         }
     }
 
