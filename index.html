@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="day">
+      
+      <label for="">DAY</label>
+      <input id="dia" type="text" placeholder="DD" value="">
+      <p class="mensagemDiaErro mensagemDiasAmais">This field is required</p>
+
+    </div>
+
+    <div class="month">
+
+      <label for="">MONTH</label>
+      <input id="mes" type="text" placeholder="MM" value="">
+      <p class="mensagemMesErro">This field is required</p>
+
+    </div>
+
+    <div class="year">
+
+      <label for="">YEAR</label>
+      <input id="ano" type="text" placeholder="YYYY" value="">
+      <p class="mensagemAnoErro">This field is required</p>
+
+    </div>
+
+    <div class="divisor">
+
+    </div>
+
+    <i id="botao" class="fa-solid fa-circle-arrow-down downarrow "></i>
+
+    <div class="results">
+      <p id="resultyears" class="dt">--</p> <p>years</p>
+    </div>
+
+    <div class="results">
+      <p id="resultmonths" class="dt">--</p> <p>months</p>
+    </div>
+
+    <div class="results">
+      <p id="resultdays" class="dt">--</p> <p>days</p>
+    </div>
+
+  </main>
+
+  <script src="/main.js"></script>
+
+</body>
+
+</html>
